@@ -15,7 +15,7 @@ function binarySearch($list, $item)
     $high = count($list) - 1;
 
     while ($low <= $high) {
-        $mid = ($low + $high);
+        $mid = floor(($low + $high) / 2);
         $guess = $list[$mid];
 
         if ($guess == $item) {
